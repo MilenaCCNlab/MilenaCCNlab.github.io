@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Page setup -->
+    <meta charset="utf-8">
+    <title>Milena Rmus</title>
+    <meta name="description" content="A brief description of your site for search engines">
+    <meta name="author" content="Information about the author here">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="icon" type="image/png" href="favicon.png">
+  
+    <!-- Stylesheets -->
+    <!-- Reset default styles and add support for google fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+   
+    <!-- Custom styles -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
+    <!-- Want to add Bootstrap? -->
+    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+    
+  </head>
+  
+  <body>
+    <header id="header">
+      <img src="logo.jpg">
+      <h1>Milena Rmus</h1>
+      
+      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
+      <ul class="main-menu">
+        <li><a href="#home">home</a></li>
+        <li><a href="#research">research</a></li>
+        <li><a href="#random">random</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>                 
+    </header>
+   
+    <div id="container">
+      <div class="inner">
+        <div id="content"> 
+
+          <div id="home" class="content-region hide">
+
+            <p>I am a fifth year PhD student at UC Berkeley, working with <a href="https://ccn.berkeley.edu/">Dr. Anne Collins</a>. <br>
+            My research is focused on building and testing computational models <br> 
+            of learning and decision-making. </p>
+
+            <img src="Headshot.png" class ="img2">
+
+          </div>
+
+          <div id="research" class="content-region hide">
+
+
+            <p>
+             <h2> Computational cognitive modeling </h2>  
+             My research centers on developing computational cognitive models that translate cognitive theories into concise algorithms with a limited number of parameters that map onto cognitive mechanisms impacting observable behavior. 
+             This work involves quantifying individual differences in information processing through model parameters, pinpointing the most suitable theories embedded within various cognitive models, 
+             and investigating the interactions among cognitive processes like executive function, working memory, and reinforcement learning.  <br>
+             
+             <p style=margin-top:0.5cm;></p>
+             Published work: <br>
+             <p style=margin-top:0.25cm;></p>
+             Rmus, M., He, M., Baribault, B., Walsh, E. G., Festa, E. K., Collins, A. G. E. & Nassar, M. R. (2022). Age-related differences in prefrontal glutamate are associated with increased working memory decay that gives the appearance of learning deficits. eLife. <a href="https://elifesciences.org/articles/85243">PDF</a> <br>
+             Rmus, M., Zou, A. & Collins, A. G. E. (2023). Choice type impacts human reinforcement learning. Journal of Cognitive Neuroscience. <a href="https://direct.mit.edu/jocn/article-abstract/35/2/314/114116/Choice-Type-Impacts-Human-Reinforcement-Learning?redirectedFrom=fulltext">PDF</a> <br>
+             Rmus, M., McDougle, S. D. & Collins, A. G. E. (2021). The role of executive function in shaping reinforcement learning. Current Opinion in Behavioral Sciences. <a href="https://www.sciencedirect.com/science/article/pii/S2352154620301480">PDF</a> <br>
+             Rmus, M., Ritz, H., Hunter, L. E., Bornstein, A. M. & Shenhav, A. (2022). Humans can navigate complex graph structures acquired during latent learning. Cognition. <a href="https://pubmed.ncbi.nlm.nih.gov/35364400/">PDF</a> <br>
+            </p>
+
+             <p>
+             <h2> Model fitting tools </h2>  
+             Cognitive science researchers heavily rely on tools to connect computational cognitive models with data, 
+             often through likelihood estimation. However, numerous models do not have tractable likelihood functions, 
+             thus limiting the range of testable theories. My work has also focused on implementing an alternative model-fitting approach 
+             using simple, light-weight artificial neural networks that enables parameter estimation and model identification
+             solely based on data sequences, while circumventing the need for likelihood estimation. <br>
+             <p style=margin-top:0.5cm;></p>
+             
+             Published work: <br>
+             <p style=margin-top:0.25cm;></p>
+             Rmus, M., Pan, T., Xia, L. & Collins, A. G. E.  (2023). Artificial neural networks for model identification and parameter estimation in computational cognitive models. bioRxiv. <a href="https://www.biorxiv.org/content/10.1101/2023.09.14.557793v1">PDF</a> <br>
+             Rmus, M., Xia, J., Collins, J. & Collins, A. G. E. (2022). Using Deep Learning tools for fitting Reinforcement Learning Models. Conference on Computational Cognitive Neuroscience Proceedings. <a href="https://2022.ccneuro.org/proceedings/0000238.pdf">PDF</a>
+             </p>
+
+            
+            <p>
+             <h2>Hierarchical reinforcement learning</h2>  
+              Hierarchical reinforcement learning presents an effective solution to the challenges of generalization and scalability that classical reinforcement learning models often encounter.
+              Within the HRL framework, intricate learning tasks are broken down into sub-components through the use of pseudo-reinforcing subgoals, which can be applied to new tasks. 
+              My research centers on investigating the process by which individuals discover these subgoals, revealing a strategic, depth-first approach to exploring the subgoal space. 
+              Moreover, a series of experiments have demonstrated the seamless transferability of pseudo-reinforcing subgoals' effects to independent tasks.<br>
+            <p style=margin-top:0.5cm;></p>
+             
+             Published work: <br>
+             <p style=margin-top:0.25cm;></p>
+             Rmus, M., Eckstein, M.,  & Collins, A. G. E. (2023). The role of subgoals in hierarchical reinforcement learning. Conference on Computational Cognitive Neuroscience Proceedings. <a href="https://2023.ccneuro.org/proceedings/0000397.pdf">PDF</a> <br>
+            </p>
+
+
+            <p>
+              <a href="MilenaCV.pdf" target="_blank">CV</a> and <a href ="MilenaResume.pdf" target="_blank"=>Resume</a> for more information.
+            </p>
+            
+          </div>
+          
+          
+          <div id="contact" class="content-region hide">
+            <p>
+              <h4>Get in touch!</h4> <br>
+              
+              Email: milena_rmus@berkeley.edu <br>
+              Twitter: @milenamr7 <br>
+              Bluesky: @milenamr7bsky.social <br>
+              My GitHub page is <a href="https://github.com/MilenaCCNlab">here</a>.
+              
+              
+              
+            </p>
+          </div>
+          <div id="random" class="content-region hide">
+            <h4>Roller skating</h4>  
+            In my free time I like to roller skate. Here's a picture of my custom-decorated skates:
+            <img src="skates.jpg" class ="img">
+
+
+            <p style=margin-top:1cm;></p>
+            <h4>Drawing</h4>
+            I also doodle occasionally. Here are a few of my drawings:
+            <img src="drawings.png" class="img">
+
+
+
+
+
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- Load additional JS scripts here -->
+    <script type="text/javascript" src="script.js"></script>
+    
+  </body>
+</html>
