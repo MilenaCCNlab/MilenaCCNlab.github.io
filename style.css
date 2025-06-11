@@ -164,5 +164,20 @@ ul.main-menu li a.active {
 .text22 {
   font-size: 10px;
 }
+.profile-container {
+  display: flex;
+  align-items: flex-start;  /* Align top of image with top of text */
+  gap: 20px;                /* Space between image and text */
+  max-width: 800px;         /* Optional: control layout width */
+}
 
+.headshot-img {
+  width: 150px;             /* Smaller image */
+  height: auto;
+  border-radius: 8px;       /* Optional: rounded corners */
+}
+
+.profile-text {
+  flex: 1;
+}
 
