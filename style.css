@@ -166,18 +166,23 @@ ul.main-menu li a.active {
 }
 .profile-container {
   display: flex;
-  align-items: flex-start;  /* Align top of image with top of text */
-  gap: 20px;                /* Space between image and text */
-  max-width: 800px;         /* Optional: control layout width */
+  align-items: stretch;      /* This makes both children match the height of the tallest (the image) */
+  gap: 20px;
+  max-width: 800px;
+  margin: 20px auto;
 }
 
 .headshot-img {
-  width: 150px;             /* Smaller image */
+  width: 150px;
   height: auto;
-  border-radius: 8px;       /* Optional: rounded corners */
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .profile-text {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Spread the content top to bottom */
+  padding: 5px 0;                 /* Optional padding for visual spacing */
 }
 
