@@ -164,12 +164,15 @@ ul.main-menu li a.active {
 .text22 {
   font-size: 10px;
 }
+
+
 .profile-container {
   display: flex;
-  align-items: stretch;      /* This makes both children match the height of the tallest (the image) */
+  align-items: stretch;
   gap: 20px;
   max-width: 800px;
   margin: 20px auto;
+  flex-wrap: wrap; /* allow wrapping on small screens */
 }
 
 .headshot-img {
@@ -179,10 +182,21 @@ ul.main-menu li a.active {
   object-fit: cover;
 }
 
-.profile-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Spread the content top to bottom */
-  padding: 5px 0;                 /* Optional padding for visual spacing */
-}
+/* Optional: center image on small screens */
+@media (max-width: 600px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
+  .profile-text {
+    text-align: left;
+    padding: 0 10px;
+  }
+
+  .headshot-img {
+    width: 50%;
+    max-width: 200px;
+  }
+}
